@@ -1,7 +1,7 @@
 // File: api/generate.js
 import { OpenAI } from 'openai';
 
-const openai = new OpenAI({ apiKey: process.env.sk-1234efghqrstuvwx1234efghqrstuvwx1234efgh });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
